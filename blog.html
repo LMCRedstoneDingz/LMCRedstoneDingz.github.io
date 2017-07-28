@@ -13,7 +13,27 @@
       <h1>LuaQ's Private Area</h1>
     </div>
     <div class="content">
-      Hello everyone, This is the main page of the website!
+      <div class="posts">
+        
+      </div>
+      <ul class="nav">
+        <a id="prev">Prev</a>
+        <a id="next">Next</a>
+      </ul>
+      <noscript>The content could not be loaded.</noscript>
+      <script>
+        var posts = document.getElementById("posts"),
+            prev = document.getElementById("prev"),
+            next = document.getElementById("next");
+        
+        var createPost = (data) => {
+          var post = document.createElement("div");
+          post.classList.value = "post";
+          
+          post.appendChild(document.createElement("p")).innerText = `${data.username} / ${data.month} ${data.day} ${data.year} / EST ${data.hour}:${data.minute} ${data.period}`;
+          post.appendChild(document.createElement("p")).innerText = data.message;
+        };
+      </script>
     </div>
   </body>
 </html>
