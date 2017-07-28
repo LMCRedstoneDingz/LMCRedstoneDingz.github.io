@@ -32,6 +32,8 @@
           
           post.appendChild(document.createElement("p")).innerText = `${data.username} / ${data.month} ${data.day} ${data.year} / EST ${data.hour}:${data.minute} ${data.period}`;
           post.appendChild(document.createElement("p")).innerText = data.message;
+          
+          posts.append(post);
         };
       </script>
     </div>
