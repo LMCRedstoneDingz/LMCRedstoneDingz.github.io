@@ -1,0 +1,10 @@
+Author: Galaxtone
+
+Changelog:
+  v1.0 (8/9/17)
+    + Telecraft created
+    + TCP Socket Support
+    + Special graphics for control characters in range 7-13
+  v1.1 (8/9/17)
+    + Changed special graphics up a bit, and characters outside of the 0-127 range are ignored\
+    + Added "version"
